@@ -1,0 +1,101 @@
+#main{
+    position: relative;
+    min-height:800px;
+    background: #E7E8EB;
+    overflow: hidden;
+    font-size: 16px;
+    color: #000;
+}
+.main {
+    position: relative;
+    width:1350px;
+    padding: 0;
+}
+.bg-video {
+    position: absolute;
+    z-index: 0;
+    /*height: 880px;*/
+    width: 1560px;
+    top: -75px;
+
+}
+.box {
+    width: 650px;
+    min-height: 590px;
+    background: rgba(255,255,255,1);
+    border-radius: 5px;
+    padding:32px 0px 0px 25px;
+    margin: 0 auto;
+    /*margin: 110px 0px 0px 0px ;*/
+    margin-top: 100px;
+}
+.captacha_img{
+    position: relative;
+    left: 20px;
+}
+.captcha-reloader{
+    cursor: pointer;
+    background: url("../img/vocal_sprite.png") no-repeat -154px -289px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    top: 17px;
+    left: -35px;
+}
+#register_chk{
+    position: relative;
+    top: 8px;
+    left: 32px;
+    /* float: left; */
+    margin-right: 40px;
+    display: inline-block;
+}
+.chk_a{
+    color:#EE4023;
+}
+.chk_a:focus {
+    color:#EE4023;
+}
+#bt_login{
+    background-color: #EE4023;
+    color: #fff;
+}
+#bt_login:hover{
+    color:#fff;
+    background-color: #EE4023;
+}
+#bt_login:focus{
+    outline: 0;
+    color:#fff;
+    outline-color: #EE4023;
+}
+.i_error{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 7px;
+    background-image: url("../img/vocal_sprite.png");
+    background-position: 40px -439px;
+    display: inline-block;
+}
+.i_success{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 7px;
+    background-image: url("../img/vocal_sprite.png");
+    background-position: 140px -439px;
+    display: inline-block;
+}
+@keyframes reloading{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+/*@keyframes reloading2{*/
+    /*from{transform:rotate(0deg);}*/
+    /*to{transform:rotate(-360deg);}*/
+/*}*/
+.loading{
+    animation:reloading .5s steps(21) infinite;
+}
